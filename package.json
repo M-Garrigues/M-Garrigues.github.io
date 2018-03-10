@@ -1,0 +1,13 @@
+{
+  "name": "chimpanzee-website",
+  "version": "1.0.0",
+  "description": "A monkey's apprenticeship of ML shown to the world!",
+  "author": "M-GARRIGUES",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
