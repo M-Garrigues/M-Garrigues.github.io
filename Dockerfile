@@ -19,7 +19,6 @@ RUN npm install
 # RUN npm install --only=production
 
 
-USER node
 
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+#CMD [ "node","server.js"]
