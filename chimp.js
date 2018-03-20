@@ -58,14 +58,24 @@ app.get("/profile", function(req, res){
 	res.render("profile.html");
 });
 
+app.get("/project/:id", function(req, res){
+	res.render("incoming.html");
+});
+
+app.get("/error", function(req, res){
+	res.render("error.html");
+});
+
+
+
 
 
 
 //====================== ERRORS HANDLING =============================
 
 
-app.get("/404", function(req,res){
-	res.render('404.html');
+app.use("*", function(req, res){
+	res.render("404.html");
 });
 
 app.use('*', function(err, req, res, next){
