@@ -109,6 +109,11 @@
 
 				}
 
+				// Smooth scroll.
+			$('.smooth-scroll').scrolly();
+			$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
+
+
 		// Main Sections: Two.
 
 			// Lightbox gallery.
