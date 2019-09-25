@@ -80,14 +80,13 @@
 				<p>Feel free to contact me about anything, I will answer as soon as I can!</p>
 				<div class="row">
 					<div class="8u 12u$(small)">
-						<form target="_blank" action="https://postmail.invotes.com/send"
-						method="post" id="email_form">
-							<div class="row uniform 50%">
+						<form onsubmit="return SubForm()" id="email_form" name ="email_form">
+						<div class="row uniform 50%">
 
-							<div class="6u 12u$(xsmall)"><input type="text" name="subject" placeholder="Subject" /></div>
-							<div class="6u 12u$(xsmall)"><input type="email" name="reply_to" placeholder="Your Email" /></div>
+							<div class="6u 12u$(xsmall)"><input type="text" id="subject" name="subject" placeholder="Subject" required autocomplete="off" /></div>
+							<div class="6u 12u$(xsmall)"><input type="email" id="reply_to" name="reply_to" placeholder="Your Email" required autocomplete /></div>
 
-							<div class="12u$"><textarea name="text" placeholder="Message"></textarea></div>
+							<div class="12u$"><textarea name="text" id="text" placeholder="Message" required></textarea></div>
 							<ul class="actions ">
 								<li><input id="submit_form" type="submit" value="Send" /></li></center>
 							</ul>
@@ -158,5 +157,33 @@
 		<script src="public/story/assets/js/jquery.scrolly.min.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="public/strata/assets/js/main.js"></script>
+		
+<script>
+	function SubForm (){
+			$.ajax({
+				url:'https://postmail.invotes.com/send',
+				type:'post',
+				data:$('#email_form').serialize(),
+				success:function(){
+					alert("Message sent!");
+					resetForm();
+				},
+				error:function(){
+					console.log("Message could not be sent, please try with your mail client.");
+					resetForm();
+				}
+			});
+		return false;
+		}
+
+	function resetForm(){
+		submitButton.disabled = false;
+		submitButton.value = "Send";
+		$("#text").val("").empty();
+   		$("#reply_to").val("").empty();
+    	$("#subject").val("").empty();
+    	console.log("Done!");
+	}
+</script>
 	</body>
 	</html>
