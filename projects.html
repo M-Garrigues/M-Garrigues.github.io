@@ -11,12 +11,12 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
+
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Portfolio</h1>
-							<p class="major">Here is a collection of the A.I related projects I worked on.<br>I did some by myself, and some with friends.<br>
-							There is a quick summary and some explanations for each project, enjoy!</p>	
+							<p class="major">Here is a collection of the A.I related projects I worked on.<br>I did some by myself, and some with friends. Enjoy!<br>
 							<ul class="actions vertical">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
@@ -26,6 +26,76 @@
 						</div>
 					</section>
 
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Ear detection and localisation</h2>
+							<p>Technology: Python, Tensorflow<br>
+							The goal here was to create a light network, able to work live on mobile phones, which could detect and locate an ear in an image. I created the dataset, set up a pipeline, and trained a mobilenet_V2 model with it.<br>
+							Made during my internship at <a href="https://myfit-solutions.com/">MyFit Solutions</a>.</p>
+							
+						</div>
+						<div class="image">
+							<img src="images/ear_detection.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>House Prices Prediction</h2>
+							<p>Technology: Python, Tensorflow<br>
+							A classical Kaggle Challenge, and a good exercise of data analysis and preparation. We trained an elastic net for our submissions.<br>
+							Made in collaboration with <a href="https://github.com/Maganik">V. Grandjean</a>.</p></p>
+							<ul class="actions vertical">
+								<a href="https://github.com/M-Garrigues/Kaggle-House-Prices" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/house_prices.png" alt="" />
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Quadratic Assignement Problem</h2>
+							<p>Technology: Python<br>
+							The quadratic assignment problem (QAP) is one of the fundamental combinatorial optimization problems in the branch of optimization or operations research in mathematics, from the category of the facilities location problems.<br>
+							We tried 3 algorithms on it, with various results: a Tabu search, a Simulated Annealing algorithm and a genetic algorithm.<br>
+							Made in collaboration with <a href="https://github.com/Maganik">V. Grandjean</a>.</p>
+							<ul class="actions vertical">
+								
+								<a href="https://github.com/M-Garrigues/Quadratic-Assignment-Problem/blob/master/notebooks/Rapport_GRANDJEAN_GARRIGUES.ipynb" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/qap.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Kohonen Maps</h2>
+							<p>Technology: Python<br>
+							Self-organising maps are a kind of Neural Network trained with unsupervised learning, to produce low dimensional representation of the input space, preserving its topological features.<br>
+							We explored their properties on various datasets.<br>
+							Made in collaboration with <a href="https://github.com/Maganik">V. Grandjean</a>.</p>
+							<ul class="actions vertical">
+								<a href="https://github.com/Maganik/KohonenMap/blob/master/KohonenMap.ipynb" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/kohonen.png" alt="" />
+						</div>
+					</section>
+
+
+
+
+
+
+
+
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
@@ -34,7 +104,6 @@
 							Our first Kaggle challenge, using a Convolutionnal Neural Network to generate identification masks, to find nucleus in microsope images.<br>
 							Made in collaboration with <a href="https://github.com/Maganik">V. Grandjean</a>.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/nucleus_recognition.html" class="button">Learn More</a>
 								<a href="https://github.com/Maganik/NucleiIdentification" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -50,7 +119,6 @@
 							<p>Technology: Matlab<br>
 							The classic MNIST dataset classification, done through Andrew Ng's machine learning course. It uses a single layer Neural Network.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/mnist_nn.html" class="button">Learn More</a>
 								<a href="https://github.com/M-Garrigues/NG-s-Machine-Learning-Course/tree/master/ML-ex4-Neural-Network" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -67,7 +135,6 @@
 							A Word2Vec implementation of word embeddings applied to Lord Of The Rings. Skip-Gram model, clustering, and some fun.<br>
 							Made in collaboration with <a href="https://github.com/Maganik">V. Grandjean</a>.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/word_embedding_lotr.html" class="button">Learn More</a>
 								<a href="https://github.com/M-Garrigues/wordEmbeddingLOTR" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -81,9 +148,9 @@
 							<h2>Autodidacte</h2>
 							<p>Technology: C, from scratch.
 								<br>A car in a 2D environment, learning to drive with a genetic algorithm and a single layer Neural Network.<br>
+								Promotion's best project.<br> 
 								Made in collaboration with <a href="https://github.com/FlorianBegonin">F. Begonin</a> and <a href="https://github.com/Maganik">V. Grandjean</a>.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/autodidacte.html" class="button">Learn More</a>
 								<a href="https://github.com/M-Garrigues/Auto-Didacte_Neural-Network" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -99,7 +166,6 @@
 							A Multi-Agent System of an Ant Colony Algorithm, trying to find the shortest path between two points via swarm intelligence.<br>
 							Made in collaboration with <a href="https://github.com/FlorianBegonin">F. Begonin</a>.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/ant_colony.html" class="button">Learn More</a>
 								<a href="https://github.com/M-Garrigues/AntHill-Multi_Agent_System" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
@@ -115,7 +181,6 @@
 							<p>Technology: C++
 								<br>An artificial intelligence playing a variant of Chess, using Monte Carlo tree search.</p>
 							<ul class="actions vertical">
-								<li><a href="projects/q-chess.html" class="button">Learn More</a>
 								<a href="https://github.com/M-Garrigues/Chess-AI" class="icon style2 fa-github" style="padding: 10px"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
