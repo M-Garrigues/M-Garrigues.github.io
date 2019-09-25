@@ -169,8 +169,9 @@
 					resetForm();
 				},
 				error:function(){
-					console.log("Message could not be sent, please try with your mail client.");
-					resetForm();
+					alert("Message could not be sent, please try with your mail client.");
+					submitButton.disabled = false;
+					submitButton.value = "Send";
 				}
 			});
 		return false;
@@ -182,7 +183,6 @@
 		$("#text").val("").empty();
    		$("#reply_to").val("").empty();
     	$("#subject").val("").empty();
-    	console.log("Done!");
 	}
 </script>
 	</body>
